@@ -1,0 +1,36 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        // See: https://github.com/microsoft/TypeScript/wiki/Debugging-Language-Service-in-VS-Code
+        "name": "Debug TS Server",
+        "type": "node",
+        "request": "attach",
+        "processId": "${command:PickProcess}",
+        "restart": true,
+        "protocol": "inspector",
+      },
+      {
+        "name": "Debug Jest Unit Tests",
+        "type": "node",
+        "request": "launch",
+        "runtimeArgs": [
+          "--silent=false",
+          "--inspect-brk",
+          "${workspaceRoot}/node_modules/.bin/jest",
+          "--runInBand"
+        ],
+        "console": "integratedTerminal",
+        "port": 9229,
+      },
+      {
+        "name": "Invoke Lambda",
+        "type": "node",
+        "request": "launch",
+        "runtimeExecutable": "yarn",
+        "cwd": "${workspaceRoot}",
+        "runtimeArgs": ["invoke"],
+        "port": 5858
+      },
+    ]
+  }

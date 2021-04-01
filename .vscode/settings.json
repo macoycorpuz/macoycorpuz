@@ -1,0 +1,76 @@
+{
+  // FILES
+  "files.associations": {
+      "*.json": "jsonc"
+  },
+  "files.autoSave": "onFocusChange",
+  // EDITOR
+  "editor.tabSize": 2,
+  "editor.fontSize": 16,
+  "editor.multiCursorModifier": "alt",
+  "editor.codeLens": true,
+  "editor.codeActionsOnSave": {
+      "source.fixAll": true
+  },
+  // GIT
+  "git.autofetch": true,
+  "git.enableSmartCommit": true,
+  "git.ignoredRepositories": [],
+  "gitlens.gitCommands.skipConfirmations": [
+      "fetch:command",
+      "switch:command"
+  ],
+  
+  // WORKBENCH
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.colorCustomizations": {
+      "terminal.foreground": "#00FD61",
+      "terminal.background": "#0d0d0d"
+  },
+  "workbench.statusBar.visible": true,
+
+  // TERMINAL
+  "terminal.integrated.shell.osx": "/bin/zsh",
+  "terminal.integrated.fontSize": 16,
+  "terminal.integrated.cursorStyle": "line",
+
+  // Debug Console
+  "debug.console.fontSize": 16,
+  
+  // Custom tags for the parser to use
+  "yaml.customTags": [
+      "!Ref",
+      "!GetAtt",
+      "!FindInMap sequence",
+      "!FindInMap scalar",
+      "!GetAtt",
+      "!GetAZs",
+      "!Cidr",
+      "!ImportValue",
+      "!Join sequence",
+      "!Select",
+      "!Split",
+      "!Sub sequence",
+      "!Sub scalar",
+      "!And",
+      "!Equals sequence",
+      "!If sequence",
+      "!Not sequence",
+      "!Or"
+  ],
+  // Enable/disable default YAML formatter (requires restart)
+  "yaml.format.enable": true,
+
+  //Others
+  "explorer.compactFolders": false,
+  "workbench.sideBar.location": "right",
+  "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+  "workbench.activityBar.visible": true,
+  "breadcrumbs.enabled": true,
+  "editor.renderControlCharacters": false,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "git.confirmSync": false,
+  "eslint.packageManager": "yarn",
+  "python.pythonPath": "/usr/local/bin/python3",
+  "editor.minimap.enabled": false
+}
